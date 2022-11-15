@@ -1,0 +1,44 @@
+﻿<Window x:Name="MainMouse" x:Class="EllieMouse.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EllieMouse"
+        mc:Ignorable="d"
+        Title="MainMouse" Height="100" Width="100" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" Background="Transparent" Topmost="True" IsEnabled="False" Icon="Resources/Icon/IconMouseHand.png">
+    <Grid>
+        <Ellipse x:Name="Ellipse_Frame" Fill="#00F4F4F5" HorizontalAlignment="Left" Height="80" Stroke="#FFF00909" VerticalAlignment="Top" Width="80" Margin="10,10,0,0" StrokeThickness="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnDouble" Content="2" HorizontalAlignment="Left" Margin="3,30,0,0" VerticalAlignment="Top" Width="21" Height="22" Click="BtnDouble_Click">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFD30404" Offset="0.84"/>
+                    <GradientStop Color="#00E80707" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnTriple" Content="3" HorizontalAlignment="Left" Margin="24,8,0,0" VerticalAlignment="Top" Width="21" Height="22" Click="BtnTriple_Click" >
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFD30404" Offset="0.84"/>
+                    <GradientStop Color="#00E80707" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnDrag" Content="D" HorizontalAlignment="Left" Margin="75,30,0,0" VerticalAlignment="Top" Width="21" Height="22" Click="BtnDrag_Click" >
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFD30404" Offset="0.84"/>
+                    <GradientStop Color="#00E80707" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnRight" Content="R" HorizontalAlignment="Left" Margin="53,8,0,0" VerticalAlignment="Top" Width="21" Height="22" Click="BtnRight_Click" >
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFD30404" Offset="0.84"/>
+                    <GradientStop Color="#00E80707" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
